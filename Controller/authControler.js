@@ -87,6 +87,24 @@ const signin = async (req, res) => {
   }
 };
 
+const getUser = async(req,res) =>{
+  const userId = req.body.id;
+
+
+  try {
+    const useridDet = await userSchema.findById(userId)
+    return res.status(200).json({
+      success:true,
+      data:useridDet
+    })
+  } catch (error) {
+    return res.status(400).json({
+      success:false,
+      message:"you have some error"
+    })
+  }
+} 
+
 module.exports = {
   signup,
   signin,

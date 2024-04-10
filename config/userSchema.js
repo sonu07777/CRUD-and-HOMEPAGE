@@ -22,10 +22,12 @@ const connect = new  mongoose.Schema({
     password:{
         type:Number,
         required:true,
+        select:false
     },
     conform_password:{
         type:Number,
-        required:true
+        required:true,
+        select:false
     }
 },{
     timestamps:true
