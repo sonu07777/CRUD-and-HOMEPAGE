@@ -88,7 +88,7 @@ const signin = async (req, res) => {
 };
 
 const getUser = async(req,res) =>{
-  const userId = req.body.id;
+  const userId = req.user.id;
 
 
   try {
@@ -108,4 +108,5 @@ const getUser = async(req,res) =>{
 module.exports = {
   signup,
   signin,
+  getUser
 };

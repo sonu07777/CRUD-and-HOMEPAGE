@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "D:\\pw class code\\Backend\\Basic Path\\app.js",
+      "request": "launch",
+      "url": "D:\\pw class code\\Backend\\Basic Path\\app.js"
+    }
+  ]
+}

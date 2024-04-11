@@ -38,7 +38,7 @@ connect.methods= {
         return jwtToken.sign(
             {id:this._id,email:this.email},
             process.env.SECRET,
-            {expiresIn:'24'}
+            {expiresIn:'24h'}
         )
     }
 }
